@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceitos de JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Conceitos de JavaScript</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Saída com console.log()</h2>
+            <p>O método <code>console.log()</code> é usado para exibir saídas no console do navegador.</p>
+            <pre>
+<code>
+// Exemplo
+console.log("Programação");
+let num = 1;
+console.log(num);
+            </code>
+            </pre>
+            <button onclick="exemploConsoleLog()">Ver Exemplo</button>
+            <p id="outputConsoleLog"></p>
+        </section>
+        <section>
+            <h2>Estruturas Condicionais (if/else)</h2>
+            <p>As declarações <code>if</code> e <code>if-else</code> são usadas para tomar decisões baseadas em condições.</p>
+            <pre>
+<code>
+// Exemplo
+let num = 5;
+if (num > 10) {
+    console.log("Maior que 10");
+} else {
+    console.log("Menor ou igual a 10");
+}
+            </code>
+            </pre>
+            <button onclick="exemploIfElse()">Ver Exemplo</button>
+            <p id="outputIfElse"></p>
+        </section>
+        <section>
+            <h2>Execução Sequencial</h2>
+            <p>As instruções em um programa são executadas na ordem em que aparecem.</p>
+            <pre>
+<code>
+// Exemplo
+let num = 1;
+num = 2;
+console.log(num); // Exibe 2
+            </code>
+            </pre>
+            <button onclick="exemploExecucaoSequencial()">Ver Exemplo</button>
+            <p id="outputExecucaoSequencial"></p>
+        </section>
+        <section>
+            <h2>Operadores Aritméticos e Comparativos</h2>
+            <p>Operadores aritméticos (+, -, *, /) e comparativos (==, >, <) são usados para realizar cálculos e comparações.</p>
+            <pre>
+<code>
+// Exemplo
+let num1 = 10;
+let num2 = 5;
+console.log(num1 + num2); // 15
+console.log(num1 > num2); // true
+            </code>
+            </pre>
+            <button onclick="exemploOperadores()">Ver Exemplo</button>
+            <p id="outputOperadores"></p>
+        </section>
+        <section>
+            <h2>Declaração e Atribuição de Variáveis</h2>
+            <p>Variáveis podem ser declaradas e valores podem ser atribuídos a elas.</p>
+            <pre>
+<code>
+// Exemplo
+let num1 = 1;
+let num2;
+num2 = 2;
+console.log(num1, num2); // 1, 2
+num1 = 3;
+console.log(num1); // 3
+            </code>
+            </pre>
+            <button onclick="exemploVariaveis()">Ver Exemplo</button>
+            <p id="outputVariaveis"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
