@@ -9,25 +9,47 @@
 <body>
     <header>
         <h1>Conceitos de JavaScript</h1>
+        <p>Professor Mateus Barbosa Reck</p>
     </header>
     <main>
+        <section class="section_Bemvindo" >
+            <h2>Bem-vindos 😄</h2>
+            <p>
+                Bem-vindos ao meu guia de estudo de JavaScript! Este material foi preparado para ajudar você a entender os conceitos básicos de programação com JavaScript. Vamos explorar desde a saída de dados com <code>console.log()</code> até operadores aritméticos e estruturas condicionais.
+            </p>
+            <p>
+                Antes de começar, certifique-se de ter o Visual Studio Code (VS Code) instalado em seu computador. O VS Code é um editor de código-fonte poderoso e gratuito que facilitará o desenvolvimento e teste dos seus códigos JavaScript.
+            </p>
+            <p>
+                Para começar a programar, siga estes passos:
+            </p>
+            <ol>
+                <li>Abra o VS Code.</li>
+                <li>Crie uma nova pasta para o seu projeto.</li>
+                <li>Dentro desta pasta, crie um arquivo HTML chamado <code>index.html</code>.</li>
+                <li>Crie um arquivo JavaScript chamado <code>script.js</code> na mesma pasta.</li>
+                <li>Copie o conteúdo para o arquivo <code>index.html</code> e as soluções dos exercícios para o <code>script.js</code>.</li>
+                <li>Abra o arquivo <code>index.html</code> no navegador para ver o resultado.</li>
+            </ol>
+        </section>
         <section>
             <h2>Saída com console.log()</h2>
-            <p>O método <code>console.log()</code> é usado para exibir saídas no console do navegador.</p>
+            <p>O método <code>console.log()</code> é usado para exibir saídas no console do navegador. Ele é útil para verificação de valores durante o desenvolvimento.</p>
             <pre>
 <code>
 // Exemplo
-console.log("Programação");
+console.log("Programming");
 let num = 1;
 console.log(num);
             </code>
             </pre>
             <button onclick="exemploConsoleLog()">Ver Exemplo</button>
             <p id="outputConsoleLog"></p>
+            <p>Ao executar o código acima, a string "Programming" será exibida no console, seguida pelo valor da variável <code>num</code>, que é 1.</p>
         </section>
         <section>
             <h2>Estruturas Condicionais (if/else)</h2>
-            <p>As declarações <code>if</code> e <code>if-else</code> são usadas para tomar decisões baseadas em condições.</p>
+            <p>As declarações <code>if</code> e <code>if-else</code> são usadas para tomar decisões baseadas em condições. A condição dentro dos parênteses é avaliada, e se for verdadeira, o bloco de código dentro do <code>if</code> é executado. Caso contrário, se houver um bloco <code>else</code>, ele será executado.</p>
             <pre>
 <code>
 // Exemplo
@@ -41,10 +63,11 @@ if (num > 10) {
             </pre>
             <button onclick="exemploIfElse()">Ver Exemplo</button>
             <p id="outputIfElse"></p>
+            <p>No exemplo acima, a variável <code>num</code> tem o valor 5. Como 5 não é maior que 10, o bloco <code>else</code> será executado, exibindo "Menor ou igual a 10" no console.</p>
         </section>
         <section>
             <h2>Execução Sequencial</h2>
-            <p>As instruções em um programa são executadas na ordem em que aparecem.</p>
+            <p>Em JavaScript, as instruções são executadas na ordem em que aparecem, de cima para baixo. Esta ordem de execução é chamada de execução sequencial.</p>
             <pre>
 <code>
 // Exemplo
@@ -55,10 +78,11 @@ console.log(num); // Exibe 2
             </pre>
             <button onclick="exemploExecucaoSequencial()">Ver Exemplo</button>
             <p id="outputExecucaoSequencial"></p>
+            <p>No exemplo acima, a variável <code>num</code> é inicialmente definida como 1, mas depois é redefinida para 2 antes de ser exibida no console. Portanto, o console exibirá 2.</p>
         </section>
         <section>
             <h2>Operadores Aritméticos e Comparativos</h2>
-            <p>Operadores aritméticos (+, -, *, /) e comparativos (==, >, <) são usados para realizar cálculos e comparações.</p>
+            <p>Operadores aritméticos (+, -, *, /) são usados para realizar cálculos matemáticos. Operadores comparativos (==, >, <) são usados para comparar valores.</p>
             <pre>
 <code>
 // Exemplo
@@ -70,10 +94,11 @@ console.log(num1 > num2); // true
             </pre>
             <button onclick="exemploOperadores()">Ver Exemplo</button>
             <p id="outputOperadores"></p>
+            <p>No exemplo acima, <code>num1 + num2</code> resulta em 15, e <code>num1 > num2</code> resulta em <code>true</code> (verdadeiro) porque 10 é maior que 5.</p>
         </section>
         <section>
             <h2>Declaração e Atribuição de Variáveis</h2>
-            <p>Variáveis podem ser declaradas e valores podem ser atribuídos a elas.</p>
+            <p>Em JavaScript, variáveis podem ser declaradas usando <code>let</code>, <code>const</code> ou <code>var</code>. Valores podem ser atribuídos a essas variáveis, e esses valores podem ser alterados (a menos que a variável tenha sido declarada com <code>const</code>, o que torna seu valor imutável).</p>
             <pre>
 <code>
 // Exemplo
@@ -87,6 +112,10 @@ console.log(num1); // 3
             </pre>
             <button onclick="exemploVariaveis()">Ver Exemplo</button>
             <p id="outputVariaveis"></p>
+            <p>No exemplo acima, <code>num1</code> é inicialmente 1 e <code>num2</code> é indefinido até ser atribuído o valor 2. Após a reatribuição, <code>num1</code> passa a ser 3.</p>
+        </section>
+        <section>
+            <button onclick="window.location.href='exercicios.html'">Ir para Exercícios</button>
         </section>
     </main>
     <script src="script.js"></script>

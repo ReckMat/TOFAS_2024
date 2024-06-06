@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios de JavaScript</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Saída com console.log()</h2>
+            <div>
+                <h3>Exercício 1</h3>
+                <p>Exiba "Hello, World!" no console.</p>
+                <button onclick="solucao1_1()">Ver Solução</button>
+                <pre id="solucao1_1"></pre>
+            </div>
+            <div>
+                <h3>Exercício 2</h3>
+                <p>Exiba "Aprendendo JavaScript é divertido!" no console.</p>
+                <button onclick="solucao1_2()">Ver Solução</button>
+                <pre id="solucao1_2"></pre>
+            </div>
+            <div>
+                <h3>Exercício 3</h3>
+                <p>Declare uma variável e exiba seu valor no console.</p>
+                <button onclick="solucao1_3()">Ver Solução</button>
+                <pre id="solucao1_3"></pre>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Estruturas Condicionais (if/else)</h2>
+            <div>
+                <h3>Exercício 1</h3>
+                <p>Verifique se um número é par ou ímpar.</p>
+                <button onclick="solucao2_1()">Ver Solução</button>
+                <pre id="solucao2_1"></pre>
+            </div>
+            <div>
+                <h3>Exercício 2</h3>
+                <p>Verifique se uma variável é maior que 10.</p>
+                <button onclick="solucao2_2()">Ver Solução</button>
+                <pre id="solucao2_2"></pre>
+            </div>
+            <div>
+                <h3>Exercício 3</h3>
+                <p>Verifique se duas variáveis são iguais.</p>
+                <button onclick="solucao2_3()">Ver Solução</button>
+                <pre id="solucao2_3"></pre>
+            </div>
+        </section>
+
+        <section>
+            <h2>Execução Sequencial</h2>
+            <div>
+                <h3>Exercício 1</h3>
+                <p>Declare duas variáveis e exiba a soma delas.</p>
+                <button onclick="solucao3_1()">Ver Solução</button>
+                <pre id="solucao3_1"></pre>
+            </div>
+            <div>
+                <h3>Exercício 2</h3>
+                <p>Declare duas variáveis, troque seus valores e exiba os novos valores.</p>
+                <button onclick="solucao3_2()">Ver Solução</button>
+                <pre id="solucao3_2"></pre>
+            </div>
+            <div>
+                <h3>Exercício 3</h3>
+                <p>Declare três variáveis, faça a multiplicação entre elas e exiba o resultado.</p>
+                <button onclick="solucao3_3()">Ver Solução</button>
+                <pre id="solucao3_3"></pre>
+            </div>
+        </section>
+
+        <section>
+            <h2>Operadores Aritméticos e Comparativos</h2>
+            <div>
+                <h3>Exercício 1</h3>
+                <p>Realize as quatro operações aritméticas básicas com duas variáveis.</p>
+                <button onclick="solucao4_1()">Ver Solução</button>
+                <pre id="solucao4_1"></pre>
+            </div>
+            <div>
+                <h3>Exercício 2</h3>
+                <p>Compare duas variáveis para verificar se são iguais.</p>
+                <button onclick="solucao4_2()">Ver Solução</button>
+                <pre id="solucao4_2"></pre>
+            </div>
+            <div>
+                <h3>Exercício 3</h3>
+                <p>Verifique se uma variável é maior ou menor que outra.</p>
+                <button onclick="solucao4_3()">Ver Solução</button>
+                <pre id="solucao4_3"></pre>
+            </div>
+        </section>
+
+        <section>
+            <h2>Declaração e Atribuição de Variáveis</h2>
+            <div>
+                <h3>Exercício 1</h3>
+                <p>Declare uma variável, atribua um valor e exiba no console.</p>
+                <button onclick="solucao5_1()">Ver Solução</button>
+                <pre id="solucao5_1"></pre>
+            </div>
+            <div>
+                <h3>Exercício 2</h3>
+                <p>Declare uma variável, mude seu valor e exiba os valores antes e depois da mudança.</p>
+                <button onclick="solucao5_2()">Ver Solução</button>
+                <pre id="solucao5_2"></pre>
+            </div>
+            <div>
+                <h3>Exercício 3</h3>
+                <p>Declare duas variáveis, troque seus valores entre si e exiba os novos valores.</p>
+                <button onclick="solucao5_3()">Ver Solução</button>
+                <pre id="solucao5_3"></pre>
+            </div>
+        </section>
+
+        <section>
+            <button onclick="window.location.href='index.html'">Voltar para Conceitos</button>
+        </section>
+    </main>
+    <script>
+        function solucao1_1() {
+            const solucao = `console.log("Hello, World!");`;
+            document.getElementById('solucao1_1').innerText = solucao;
+        }
+
+        function solucao1_2() {
+            const solucao = `console.log("Aprendendo JavaScript é divertido!");`;
+            document.getElementById('solucao1_2').innerText = solucao;
+        }
+
+        function solucao1_3() {
+            const solucao = `let variavel = 42;\nconsole.log(variavel);`;
+            document.getElementById('solucao1_3').innerText = solucao;
+        }
+
+        function solucao2_1() {
+            const solucao = `let numero = 4;\nif (numero % 2 === 0) {\n  console.log("O número é par");\n} else {\n  console.log("O número é ímpar");\n}`;
+            document.getElementById('solucao2_1').innerText = solucao;
+        }
+
+        function solucao2_2() {
+            const solucao = `let numero = 15;\nif (numero > 10) {\n  console.log("O número é maior que 10");\n} else {\n  console.log("O número não é maior que 10");\n}`;
+            document.getElementById('solucao2_2').innerText = solucao;
+        }
+
+        function solucao2_3() {
+            const solucao = `let a = 5;\nlet b = 5;\nif (a === b) {\n  console.log("As variáveis são iguais");\n} else {\n  console.log("As variáveis não são iguais");\n}`;
+            document.getElementById('solucao2_3').innerText = solucao;
+        }
+
+        function solucao3_1() {
+            const solucao = `let a = 5;\nlet b = 7;\nlet soma = a + b;\nconsole.log(soma);`;
+            document.getElementById('solucao3_1').innerText = solucao;
+        }
+
+        function solucao3_2() {
+            const solucao = `let a = 5;\nlet b = 7;\n[a, b] = [b, a];\nconsole.log("Novo valor de a:", a);\nconsole.log("Novo valor de b:", b);`;
+            document.getElementById('solucao3_2').innerText = solucao;
+        }
+
+        function solucao3_3() {
+            const solucao = `let a = 2;\nlet b = 3;\nlet c = 4;\nlet resultado = a * b * c;\nconsole.log(resultado);`;
+            document.getElementById('solucao3_3').innerText = solucao;
+        }
+
+        function solucao4_1() {
+            const solucao = `let num1 = 12;\nlet num2 = 3;\nconsole.log("Adição:", num1 + num2);\nconsole.log("Subtração:", num1 - num2);\nconsole.log("Multiplicação:", num1 * num2);\nconsole.log("Divisão:", num1 / num2);`;
+            document.getElementById('solucao4_1').innerText = solucao;
+        }
+
+        function solucao4_2() {
+            const solucao = `let a = 10;\nlet b = 10;\nif (a == b) {\n  console.log("As variáveis são iguais");\n} else {\n  console.log("As variáveis não são iguais");\n}`;
+            document.getElementById('solucao4_2').innerText = solucao;
+        }
+
+        function solucao4_3() {
+            const solucao = `let a = 15;\nlet b = 10;\nif (a > b) {\n  console.log("a é maior que b");\n} else {\n  console.log("a não é maior que b");\n}`;
+            document.getElementById('solucao4_3').innerText = solucao;
+        }
+
+        function solucao5_1() {
+            const solucao = `let minhaVariavel = 10;\nconsole.log(minhaVariavel);`;
+            document.getElementById('solucao5_1').innerText = solucao;
+        }
+
+        function solucao5_2() {
+            const solucao = `let minhaVariavel = 10;\nconsole.log("Valor inicial:", minhaVariavel);\nminhaVariavel = 20;\nconsole.log("Novo valor:", minhaVariavel);`;
+            document.getElementById('solucao5_2').innerText = solucao;
+        }
+
+        function solucao5_3() {
+            const solucao = `let a = 1;\nlet b = 2;\nlet temp = a;\na = b;\nb = temp;\nconsole.log("Novo valor de a:", a);\nconsole.log("Novo valor de b:", b);`;
+            document.getElementById('solucao5_3').innerText = solucao;
+        }
+    </script>
+</body>
+</html>
